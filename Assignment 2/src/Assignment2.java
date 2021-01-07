@@ -68,7 +68,7 @@ public class Assignment2 {
 		System.out.println();	
 		int coursestaken;
 		System.out.print("Enter Total Courses Do You Want To Take : ");
-	    int courses = in.nextInt();
+	    	int courses = in.nextInt();
 		if(courses==1) {
 			System.out.println("What courses do you want to choose. Press 1 for courses1 ; Press 2 for courses2 ; Press 3 for courses3");
 			System.out.println();	
@@ -162,26 +162,18 @@ public class Assignment2 {
 			else 
 				System.out.println("Please enter valid number.");
 			}
-			System.out.println();	
+			System.out.println();
+		
 			int i =1;
 			for(i=1 ;i<=3;i++) {
-				i=courses;
-				if(courses==1) {
-			    System.out.println("Total Number of Courses Enrolled : " + courses);
-			    System.out.println();	
-				int coursescredit = (courses*3);
-				System.out.println("Total Courses Credit Hours : " + coursescredit);
-			 }else if (courses==2) {
-				 System.out.println("Total Number of Courses Enrolled : " + courses);
-				 System.out.println();	
-				 int coursescredit = (courses*3);
+			    if(i==courses) {
+			   	 System.out.println("Total Number of Courses Enrolled : " + i);
+			    	 System.out.println();	
+				 int coursescredit = (i*3);
 				 System.out.println("Total Courses Credit Hours : " + coursescredit);
-			 }else if (courses==3) {
-				 System.out.println("Total Number of Courses Enrolled : " + courses);
-				 System.out.println();	
-				 int coursescredit = (courses*3);
-				 System.out.println("Total Courses Credit Hours : " + coursescredit);
-			 }
+			 
 			}
-		}
+			}		
+		
+}
 }
